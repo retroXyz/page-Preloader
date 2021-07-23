@@ -1,0 +1,52 @@
+/* imports */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@200&display=swap');
+
+/* rootz */
+:root{
+  --hidden: hidden;
+
+/* bodySetup */
+/* items */
+
+body{
+  font-family: 'Poppins', sans-serif;
+  background: #f2f2f2;
+  overflow-y: var(--hidden);
+}
+  
+/* preloader */
+  
+#preloader{
+    position: fixed;
+    height: 100vh;
+    width: 100%;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    z-index: 999;
+    /* align */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: column;
+    background: #171717;
+    display: block;
+}
+#preloader #item{
+    height: 50px;
+    width: 50px;
+    border: 1px solid #fff;
+    border-radius: 50%;
+    border-top-color: transparent;
+    border-left-color: transparent;
+    animation: spinner 1.5s linear infinite; 
+}
+  
+/* keyframes */
+
+@keyframes spinner{
+  to{
+    transform: rotate(360deg);
+  }
+}
