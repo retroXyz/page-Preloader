@@ -33,6 +33,9 @@ body{
     background: #171717;
     display: block;
 }
+#preloader.remove{
+    display: none;
+}
 #preloader #item{
     height: 50px;
     width: 50px;
