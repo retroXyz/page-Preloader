@@ -1,1 +1,2 @@
-const preloader = document.getElementById("
+const preloader = document.getElementById("preloader");
+
